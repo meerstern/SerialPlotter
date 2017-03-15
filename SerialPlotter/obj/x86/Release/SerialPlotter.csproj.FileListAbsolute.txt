@@ -1,0 +1,7 @@
+C:\Users\stern\Documents\Visual Studio 2010\Projects\SerialPlotter\SerialPlotter\bin\Release\SerialPlotter.exe
+C:\Users\stern\Documents\Visual Studio 2010\Projects\SerialPlotter\SerialPlotter\bin\Release\SerialPlotter.pdb
+C:\Users\stern\Documents\Visual Studio 2010\Projects\SerialPlotter\SerialPlotter\obj\x86\Release\SerialPlotter.Form1.resources
+C:\Users\stern\Documents\Visual Studio 2010\Projects\SerialPlotter\SerialPlotter\obj\x86\Release\SerialPlotter.Properties.Resources.resources
+C:\Users\stern\Documents\Visual Studio 2010\Projects\SerialPlotter\SerialPlotter\obj\x86\Release\SerialPlotter.csproj.GenerateResource.Cache
+C:\Users\stern\Documents\Visual Studio 2010\Projects\SerialPlotter\SerialPlotter\obj\x86\Release\SerialPlotter.exe
+C:\Users\stern\Documents\Visual Studio 2010\Projects\SerialPlotter\SerialPlotter\obj\x86\Release\SerialPlotter.pdb

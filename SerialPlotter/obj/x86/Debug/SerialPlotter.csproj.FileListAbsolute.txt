@@ -1,0 +1,15 @@
+C:\Users\stern\AppData\Local\Temporary Projects\SerialPlotter\bin\Debug\SerialPlotter.exe
+C:\Users\stern\AppData\Local\Temporary Projects\SerialPlotter\bin\Debug\SerialPlotter.pdb
+C:\Users\stern\AppData\Local\Temporary Projects\SerialPlotter\obj\x86\Debug\SerialPlotter.Form1.resources
+C:\Users\stern\AppData\Local\Temporary Projects\SerialPlotter\obj\x86\Debug\SerialPlotter.Properties.Resources.resources
+C:\Users\stern\AppData\Local\Temporary Projects\SerialPlotter\obj\x86\Debug\SerialPlotter.csproj.GenerateResource.Cache
+C:\Users\stern\AppData\Local\Temporary Projects\SerialPlotter\obj\x86\Debug\SerialPlotter.exe
+C:\Users\stern\AppData\Local\Temporary Projects\SerialPlotter\obj\x86\Debug\SerialPlotter.pdb
+C:\Users\stern\documents\visual studio 2010\Projects\SerialPlotter\SerialPlotter\obj\x86\Debug\SerialPlotter.exe
+C:\Users\stern\documents\visual studio 2010\Projects\SerialPlotter\SerialPlotter\obj\x86\Debug\SerialPlotter.pdb
+C:\Users\stern\documents\visual studio 2010\Projects\SerialPlotter\SerialPlotter\obj\x86\Debug\SerialPlotter.Form1.resources
+C:\Users\stern\documents\visual studio 2010\Projects\SerialPlotter\SerialPlotter\obj\x86\Debug\SerialPlotter.Properties.Resources.resources
+C:\Users\stern\documents\visual studio 2010\Projects\SerialPlotter\SerialPlotter\obj\x86\Debug\SerialPlotter.csproj.GenerateResource.Cache
+C:\Users\stern\documents\visual studio 2010\Projects\SerialPlotter\SerialPlotter\bin\Debug\SerialPlotter.exe
+C:\Users\stern\documents\visual studio 2010\Projects\SerialPlotter\SerialPlotter\bin\Debug\SerialPlotter.pdb
+C:\Users\stern\Documents\Visual Studio 2010\Projects\SerialPlotter\SerialPlotter\obj\x86\Debug\SerialPlotter.csprojResolveAssemblyReference.cache
