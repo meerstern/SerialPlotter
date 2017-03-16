@@ -8,6 +8,8 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO.Ports;
 using System.Windows.Forms.DataVisualization.Charting;
+using System.Text.RegularExpressions;
+
 
 namespace SerialPlotter
 {
@@ -105,8 +107,8 @@ namespace SerialPlotter
 				serialPort1.DataBits = 8;				
 				serialPort1.Parity = Parity.None;				
 				serialPort1.StopBits = StopBits.One;	
-                serialPort1.Handshake = Handshake.None;				
-				serialPort1.Encoding = Encoding.ASCII;
+                serialPort1.Handshake = Handshake.None;
+                serialPort1.Encoding = Encoding.ASCII;
                 CMB_BAUD.Enabled = false;
                 CMB_COM.Enabled = false;
                 count = 1;
@@ -176,16 +178,22 @@ namespace SerialPlotter
                 //MessageBox.Show(ex.Message);
             }
 
-           
-
-           
 
 
             double tmp0=0.0, tmp1=0.0, tmp2=0.0, tmp3=0.0;
-            if (StrArryData.Length > 0) double.TryParse(StrArryData[0], out tmp0);
-            if (StrArryData.Length > 1) double.TryParse(StrArryData[1], out tmp1);
-            if (StrArryData.Length > 2) double.TryParse(StrArryData[2], out tmp2);
-            if (StrArryData.Length > 3) double.TryParse(StrArryData[3], out tmp3);
+            if (StrArryData.Length > 0)
+            {
+                double.TryParse( Regex.Replace(StrArryData[0], "[^.0-9-]", ""), out tmp0);
+            }
+            if (StrArryData.Length > 1) { 
+                double.TryParse( Regex.Replace(StrArryData[1], "[^.0-9-]", ""), out tmp1);
+            }
+            if (StrArryData.Length > 2) { 
+                double.TryParse( Regex.Replace(StrArryData[2], "[^.0-9-]", ""), out tmp2); 
+            }
+            if (StrArryData.Length > 3) { 
+                double.TryParse( Regex.Replace(StrArryData[3], "[^.0-9-]", ""), out tmp3); 
+            }
 
             
             
@@ -251,8 +259,6 @@ namespace SerialPlotter
 
             if (Qdata1.Count > 2) {
                 chart.ChartAreas[0].AxisY.Minimum = (int)Qdata1.Min();
-               
-                
             }
            
             foreach (int value in Qdata1)chart.Series[0].Points.Add(new DataPoint(0, value));
