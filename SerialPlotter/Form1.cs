@@ -147,13 +147,15 @@ namespace SerialPlotter
 
 
             string[] StrArryData = new string[10];
+            string rcvData="";
 
 
             if( serialPort1.IsOpen == false )	return;
 
 
             try {
-                string comdata =  serialPort1.ReadLine();//ReadExisting()                
+                string comdata =  serialPort1.ReadLine();//ReadExisting()
+                rcvData = comdata;
                 StrArryData = comdata.Split(new string[] { "," }, StringSplitOptions.None);
 
                 if (checkBox1.Checked)
@@ -233,6 +235,8 @@ namespace SerialPlotter
             while (Qdata3.Count > MAX_HISTORY) Qdata3.Dequeue();
             while (Qdata4.Count > MAX_HISTORY) Qdata4.Dequeue();
 
+            BeginInvoke(new Delegate_ChangeTxtBox(ChangeTxtBox), new Object[] { rcvData });
+
             BeginInvoke(new Delegate_ShowChart(ShowChart1), new Object[] { chart1 });
             BeginInvoke(new Delegate_ShowChart(ShowChart2), new Object[] { chart2 });
             BeginInvoke(new Delegate_ShowChart(ShowChart3), new Object[] { chart3 });
@@ -247,6 +251,7 @@ namespace SerialPlotter
         private delegate void Delegate_GetDataText(Control CON);
         private delegate void Delegate_GetAveText(Control CON);
         private delegate void Delegate_ChangeButton(string text);
+        private delegate void Delegate_ChangeTxtBox(string text);
 
 
         private void ShowChart1(Chart chart) {
@@ -345,6 +350,13 @@ namespace SerialPlotter
         
         }
 
+        private void ChangeTxtBox(string text)
+        {
+
+            txtBox1.Text = text;
+
+        }
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -425,6 +437,11 @@ namespace SerialPlotter
         public static int CountChar(string s, char c)
         {
             return s.Length - s.Replace(c.ToString(), "").Length;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
 }
 }
